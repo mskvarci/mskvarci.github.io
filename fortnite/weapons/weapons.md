@@ -1,7 +1,7 @@
 ---
 title: Weapons
 layout: home
-parent: fortnite
+parent: fortnite.md
 has_children: true
 ---
 
