@@ -1,5 +1,5 @@
 ---
-title: Small
+title: Small Shield Potion
 layout: home
 ---
 
