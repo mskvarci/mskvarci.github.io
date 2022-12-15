@@ -3,7 +3,7 @@ title: Home
 layout: home
 ---
 
-This is a list of information that relates to various video games. I've tried to compile all of my knowledge into this one area.
+Placeholder text
 
 ----
 
