@@ -5,7 +5,7 @@ layout: home
 
 Games currently included:
 
-Fortnite
+[Fortnite]
 
 ----
 
