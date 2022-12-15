@@ -1,8 +1,8 @@
 ---
-title: Test
+title: Fortnite
 layout: home
 ---
 
-test
+Placeholder text
 
 ----
