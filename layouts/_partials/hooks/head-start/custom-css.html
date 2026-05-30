@@ -4,10 +4,21 @@
   padding-top: 0 !important;
   padding-bottom: 1rem !important;
 }
-/* Also kill the inner biography padding */
 #section-resume-biography-3 .resume-biography {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
+}
+/* Hide the left sidebar column (name, orgs, social icons) */
+#section-resume-biography-3 .grid.md\:grid-cols-12 > div:first-child {
+  display: none !important;
+}
+/* Make content area full-width */
+#section-resume-biography-3 .grid.md\:grid-cols-12 > div:last-child {
+  grid-column: 1 / -1 !important;
+}
+/* Remove 12-col grid — single column flow */
+#section-resume-biography-3 .grid.md\:grid-cols-12 {
+  display: block !important;
 }
 /* Hide empty avatar column */
 .resume-biography .avatar-wrapper {

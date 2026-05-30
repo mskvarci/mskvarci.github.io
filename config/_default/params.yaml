@@ -25,7 +25,7 @@ hugoblox:
   # Color and visual design system
   # ────────────────────────────────────────────────────────────────────────────
   theme:
-    mode: light
+    mode: dark
     pack: "minimal"
     colors:
       primary: ""

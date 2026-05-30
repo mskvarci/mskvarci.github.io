@@ -20,9 +20,7 @@ sections:
     design:
       background:
         gradient_mesh:
-          enable: true
-      name:
-        size: lg
+          enable: false
       avatar:
         size: medium
         shape: circle
