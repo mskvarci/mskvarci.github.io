@@ -1,4 +1,4 @@
-schema: hugoblox/author/v1
+sschema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
@@ -70,7 +70,7 @@ experience:
     org: NC State University — SSailOR Rover Project
     start: 2025-01-01
     summary: |
-      Created SolidWorks CAD models for the SSailOR (Spherical Sailing Omnidirectional Rover) — a wind-propelled autonomous platform for planetary surface exploration. Iterated prototype geometries for wind tunnel validation working alongside PhD researchers in NCSU's Mechanical & Aerospace Engineering department. Co-author on published research (arXiv).
+      Created SolidWorks CAD models for the SSailOR (Spherical Sailing Omnidirectional Rover) — a wind-propelled autonomous platform for planetary surface exploration. Iterated prototype geometries for wind tunnel validation working alongside PhD researchers in NCSU's Mechanical & Aerospace Engineering department. 
     button:
       text: Read the Paper
       url: https://arxiv.org/abs/2508.12443
@@ -79,7 +79,7 @@ experience:
     org: FRC Team 6500 — GearCats
     start: 2025-01-01
     summary: |
-      Responsible for mechanical CAD on a competitive FIRST Robotics team. Translate team design concepts into fabrication-ready models using SolidWorks and Fusion 360, with parts produced on 3D printers and multi-axis CNC routers. 2025 season: 25-19-1 record, ranked #22 in NC, Innovation in Control Award (Pitt County).
+      Responsible for mechanical CAD on a competitive FIRST Robotics team. Translate team design concepts into fabrication-ready models using SolidWorks, Fusion 360, and Onshape with parts produced on 3D printers and multi-axis CNC routers. 2025 season: 25-19-1 record, ranked #22 in NC, Innovation in Control Award (Pitt County).
 
 skills:
   - name: Design & Fabrication
