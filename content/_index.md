@@ -20,7 +20,7 @@ sections:
     design:
       background:
         gradient_mesh:
-          enable: false
+          enable: true
       avatar:
         size: medium
         shape: circle
