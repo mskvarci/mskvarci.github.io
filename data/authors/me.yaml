@@ -1,0 +1,142 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Maxwell K. Skvarcius
+  given: Maxwell
+  family: Skvarcius
+  alternate: ''
+  pronunciation: ''
+  pronouns: he/him
+postnominals: []
+status:
+  icon: "🔧"
+role: Engineering Student & Research Contributor
+bio: |
+  I'm a homeschooled junior pursuing an Associate in Engineering through dual
+  enrollment at Wake Tech Community College — self-directing a rigorous STEM
+  curriculum that's earned straight A's through Calculus III and Physics II.
+  That same initiative led me to seek out research opportunities: I now
+  contribute CAD design work for the SSailOR rover project at NC State,
+  working alongside PhD researchers on wind tunnel-validated prototypes for
+  planetary exploration.
+
+  On FRC Team 6500 (GearCats), I serve as CAD Lead, translating team design
+  concepts into fabrication-ready models using SolidWorks, Fusion 360,
+  3D printers, and multi-axis CNC routers.
+
+  I'm seeking a Summer 2026 engineering internship where I can bring the same
+  self-driven work ethic to real-world problems in mechanical, aerospace, or
+  robotics engineering.
+
+affiliations:
+  - name: NC State University — Aerospace Research
+    url: https://www.ncsu.edu/
+  - name: Wake Tech Community College
+    url: https://www.waketech.edu/
+  - name: FRC Team 6500 — GearCats
+    url: https://www.thebluealliance.com/team/6500
+
+links:
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/mskvarci/
+    label: Connect on LinkedIn
+  - icon: brands/github
+    url: https://github.com/mskvarci
+
+interests:
+  - Mechanical Design & Prototyping
+  - Aerospace & Planetary Robotics
+  - Autonomous Systems
+  - CAD/CAM & Digital Fabrication
+  - Wind Energy & Propulsion
+
+education:
+  - degree: Associate in Engineering (CCP Pathway)
+    institution: Wake Tech Community College
+    start: 2023-08-01
+    end: 2027-05-31
+    summary: |
+      Dual-enrolled through Career & College Promise. All coursework completed with straight A's: Calculus I–III, Physics I–II, General Chemistry, and Introduction to Engineering. 4.0 GPA.
+  - degree: High School Diploma
+    institution: Northern Wake Home School
+    start: 2023-08-01
+    end: 2027-05-31
+    summary: |
+      Vice President, National Home School Honor Society. Wake Tech Honors Program. Varsity Tennis. Gavel Club (Toastmasters International).
+
+experience:
+  - role: Research Contributor — Mechanical Design
+    org: NC State University — SSailOR Rover Project
+    start: 2025-01-01
+    summary: |
+      Created SolidWorks CAD models for the SSailOR (Spherical Sailing Omnidirectional Rover) — a wind-propelled autonomous platform for planetary surface exploration. Iterated prototype geometries for wind tunnel validation working alongside PhD researchers in NCSU's Mechanical & Aerospace Engineering department. Co-author on published research (arXiv).
+    button:
+      text: Read the Paper
+      url: https://arxiv.org/abs/2508.12443
+      icon: hero/document-text
+  - role: CAD Lead
+    org: FRC Team 6500 — GearCats
+    start: 2025-01-01
+    summary: |
+      Responsible for mechanical CAD on a competitive FIRST Robotics team. Translate team design concepts into fabrication-ready models using SolidWorks and Fusion 360, with parts produced on 3D printers and multi-axis CNC routers. 2025 season: 25-19-1 record, ranked #22 in NC, Innovation in Control Award (Pitt County).
+
+skills:
+  - name: Design & Fabrication
+    items:
+      - label: SolidWorks (Certified)
+        level: 5
+      - label: Fusion 360
+        level: 4
+      - label: 3D Printing / Additive Mfg
+        level: 4
+      - label: Multi-Axis CNC
+        level: 3
+  - name: Technical
+    items:
+      - label: Python
+        level: 3
+      - label: Prototyping & Testing
+        level: 4
+      - label: Technical Documentation
+        level: 4
+  - name: Safety & Communication
+    items:
+      - label: OSHA Certified
+        level: 5
+      - label: Technical Presentations
+        level: 4
+      - label: Cross-Functional Collaboration
+        level: 4
+
+languages:
+  - name: English
+    level: 5
+    label: Native
+
+awards:
+  - title: Perfect ACT Score — 36
+    awarder: ACT Inc.
+    date: "2024-01-01"
+    summary: Achieved a perfect composite score of 36 (99th percentile nationally).
+    icon: hero/academic-cap
+  - title: OSHA Safety Certification
+    awarder: Occupational Safety and Health Administration
+    date: "2024-06-01"
+    summary: Certified in workplace safety standards for engineering and manufacturing environments.
+    icon: hero/shield-check
+  - title: Innovation in Control Award
+    awarder: FIRST Robotics Competition
+    date: "2025-03-23"
+    summary: Awarded at FNC District Pitt County Event (2025) for outstanding control system design.
+    icon: hero/cog-6-tooth
+  - title: SolidWorks Mechanical Design Certification
+    awarder: Wake Tech Community College / Dassault Systèmes
+    date: "2023-12-14"
+    summary: Certified proficiency in parametric modeling, assemblies, drawings, and design intent.
+    icon: hero/wrench-screwdriver
+  - title: 4.0 GPA — All A's Across All Coursework
+    awarder: Wake Tech Community College & Northern Wake Home School
+    date: "2025-05-01"
+    summary: Perfect 4.0 GPA across all high school and dual-enrollment coursework including Calculus I–III, Physics I–II, General Chemistry, and Introduction to Engineering.
+    icon: hero/trophy

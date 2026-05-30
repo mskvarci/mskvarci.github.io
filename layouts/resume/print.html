@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} — Maxwell K. Skvarcius</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.4;
+      color: #1a1a1a;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.4in 0.5in;
+    }
+    a { color: #0969da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1 { font-size: 22pt; font-weight: 800; margin-bottom: 2pt; color: #0d1117; }
+    h2 { font-size: 11pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #0969da; border-bottom: 1.5px solid #d0d7de; padding-bottom: 3pt; margin-top: 14pt; margin-bottom: 6pt; }
+    h3 { font-size: 10.5pt; font-weight: 700; color: #1a1a1a; margin-bottom: 1pt; }
+    .subtitle { font-size: 10pt; color: #57606a; font-style: italic; margin-bottom: 1pt; }
+    .header { margin-bottom: 10pt; }
+    .header .role { font-size: 12pt; color: #57606a; font-weight: 500; margin-bottom: 4pt; }
+    .header .contact { font-size: 9pt; color: #57606a; }
+    .header .contact a { color: #57606a; }
+    .header .contact span { margin-right: 12pt; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 4pt 24pt; }
+    .entry { margin-bottom: 8pt; }
+    .entry-header { display: flex; justify-content: space-between; align-items: baseline; }
+    .entry-header .date { font-size: 9pt; color: #57606a; white-space: nowrap; }
+    .entry p, .entry li { font-size: 10pt; color: #24292f; }
+    ul { padding-left: 14pt; margin-top: 2pt; }
+    li { margin-bottom: 1pt; }
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4pt 16pt; }
+    .skill-group h3 { font-size: 9.5pt; color: #57606a; margin-bottom: 2pt; }
+    .skill-group p { font-size: 10pt; }
+    .awards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2pt 24pt; }
+    .award { font-size: 10pt; }
+    .award .date { font-size: 9pt; color: #57606a; }
+    @media print {
+      body { padding: 0.3in 0.4in; }
+      @page { size: letter; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+
+{{ $authors := site.Data.authors }}
+{{ $me := index $authors "me" }}
+
+<div class="header">
+  <h1>{{ $me.name.display }}</h1>
+  <div class="role">{{ $me.role }}</div>
+  <div class="contact">
+    {{ range $me.links }}
+      {{ if eq .icon "brands/linkedin" }}<span>LinkedIn: <a href="{{ .url }}">linkedin.com/in/mskvarci</a></span>{{ end }}
+      {{ if eq .icon "brands/github" }}<span>GitHub: <a href="{{ .url }}">github.com/mskvarci</a></span>{{ end }}
+    {{ end }}
+    <span>Raleigh, NC</span>
+  </div>
+</div>
+
+<h2>Summary</h2>
+<p style="font-size: 10pt; margin-bottom: 4pt;">
+  Self-directed homeschool student dual-enrolled in engineering at Wake Tech Community College (4.0 GPA, ACT 36). Contributing to aerospace research at NC State University while serving as CAD Lead on a competitive FIRST Robotics team. SolidWorks certified with hands-on fabrication experience. OSHA certified. Seeking Summer 2026 engineering internship.
+</p>
+
+<h2>Experience</h2>
+{{ range $me.experience }}
+<div class="entry">
+  <div class="entry-header">
+    <h3>{{ .role }} — {{ .org }}</h3>
+    <span class="date">{{ dateFormat "Jan 2006" .start }} – {{ if .end }}{{ dateFormat "Jan 2006" .end }}{{ else }}Present{{ end }}</span>
+  </div>
+  <p>{{ .summary | markdownify }}</p>
+</div>
+{{ end }}
+
+<h2>Education</h2>
+{{ range $me.education }}
+<div class="entry">
+  <div class="entry-header">
+    <h3>{{ .degree }} — {{ .institution }}</h3>
+    <span class="date">{{ dateFormat "Jan 2006" .start }} – {{ if .end }}{{ dateFormat "Jan 2006" .end }}{{ else }}Present{{ end }}</span>
+  </div>
+  <p>{{ .summary | markdownify }}</p>
+</div>
+{{ end }}
+
+<h2>Technical Skills</h2>
+<div class="skills-grid">
+  {{ range $me.skills }}
+  <div class="skill-group">
+    <h3>{{ .name }}</h3>
+    <p>{{ range $i, $item := .items }}{{ if $i }}, {{ end }}{{ $item.label }}{{ end }}</p>
+  </div>
+  {{ end }}
+</div>
+
+<h2>Awards & Certifications</h2>
+<div class="awards-grid">
+  {{ range $me.awards }}
+  <div class="award">
+    <strong>{{ .title }}</strong> <span class="date">· {{ .awarder }}, {{ dateFormat "2006" .date }}</span>
+  </div>
+  {{ end }}
+</div>
+
+<h2>Interests & Activities</h2>
+<div class="two-col">
+  <div>
+    <p><strong>Interests:</strong> {{ range $i, $item := $me.interests }}{{ if $i }}, {{ end }}{{ $item }}{{ end }}</p>
+  </div>
+  <div>
+    <p><strong>Activities:</strong> VP National Home School Honor Society · Wake Tech Honors Program · Varsity Tennis · Gavel Club (Toastmasters)</p>
+  </div>
+</div>
+
+</body>
+</html>
