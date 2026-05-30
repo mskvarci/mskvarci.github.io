@@ -95,6 +95,8 @@ skills:
         level: 3
   - name: Technical
     items:
+      - label: Linux
+        level: 3
       - label: Python
         level: 3
       - label: Prototyping & Testing
